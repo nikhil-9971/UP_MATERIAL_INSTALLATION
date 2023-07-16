@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- App CSS -->
+
+    <link rel="stylesheet" href="./app.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT"
+      crossorigin="anonymous"
+    />
+
+    <title>Relcon AGS site -UP SITE| Restoration</title>
+  </head>
+
+  <body class="p-3 mb-2 bg-primary-subtle text-emphasis-primary ">
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+     
+      <form class="row g-2 " method="post" action="https://script.google.com/macros/s/AKfycbzH1zQuh9bqOqNN8OXA9q_VgMOCDasTvkZuOvZC_CCfDQW29c0hoEkhKt8c2VUY7HOo/exec
+      ">
+        <Marquee><h2>Everyone Please mentioned all  material which installed at AGS site 😀</h2></Marquee>
+        <h1 class="card-header">Fill site visit details where material INSTALLATION:</h1>
+        <div class="col-md-2 ">
+          <label for="rocode" class="form-label">Ro Code :</label>
+          <input type="number" class="form-control" id="rocode" name="ROCODE" placeholder="@14387560"  maxlength="8" required>
+        </div>
+        <div class="col-md-6">
+          <label for="roname" class="form-label">RO Name :</label>
+          <input type="text" class="form-control" id="roname" name="RONAME" placeholder="@HAMARA PUMP PADAMPUR" required>
+        </div>
+
+
+        <!-- Region -->
+        <div class="col-md-2">
+          <label for="region" class="form-label">Region :</label>
+          <select id="region" class="form-select" name="REGION" required>
+            <option value="" disabled  selected>Select Region</option>
+            <option>AGRA</option>
+            <option>BAREILLY</option>
+            <option>BEGUSARAI</option>
+            <option>GORAKHPUR</option>
+            <option>KANPUR</option>
+            <option>LUCKNOW</option>
+            <option>MEERUT</option>
+            <option>PRAYAGRAJ</option>
+            <option>VARANASI</option>
+            
+          </select>
+        </div>
+
+        <!-- Phase Selection -->
+
+        <div class="col-md-2">
+            <label for="phase" class="form-label">Phase :</label>
+            <select id="phase" class="form-select" name="PHASE"  required>
+              <option value="" disabled  selected>Select Phase</option>
+              <option>PH-X</option>
+              <option>PH-XI</option>
+              <option>PH-XII</option>
+              <option>PH-XII</option>
+              
+            </select>
+          </div>
+
+         <!-- Select Enginner Name -->
+
+         <div class="col-md-3">
+          <label for="earthpit" class="form-label">Engineer Name :</label>
+          <select id="earthpit" class="form-select" name="ENGINEER" required>
+            <option value="" disabled selected>Name of engineer</option>
+            <option>AKSHAY ANAND</option>
+            <option>ARJUN SINGH</option>
+            <option>ARUN KUMAR</option>
+            <option>ASIF</option>
+            <option>AVNISH YADAV</option>
+            <option>BILAL</option>
+            <option>DEV NARAYAN</option>
+            <option>DHIRENDER KUMAR</option>
+            <option>DILSAD</option>
+            <option>DIWAKAR TIWARI</option>
+            <option>HABIB</option>
+            <option>KIRTIVARDHAN SINGH</option>
+            <option>KISHAN</option>
+            <option>MANOJ KUMAR</option>
+            <option>NAGENDAR KUMAR</option>
+            <option>NISSAR</option>
+            <option>PIYUSH </option>
+            <option>PRABHAT MISHRA</option>
+            <option>PRASHANT YADAV</option>
+            <option>RAJ KUMAR</option>
+            <option>RAM JI SHARMA</option>
+            <option>RAM MORAT YADAV</option>
+            <option>ROHIT KUMAR</option>
+            <option>ROHIT MAURYA</option>
+            <option>RONAK PARMAR</option>
+            <option>SHUBHAM</option>
+            <option>SUMAN</option>
+            <option>SUNNY KUMAR MADHORIYA</option>
+            <option>UTTAM KUMAR</option>
+            <option>VIPIN PACHAURI</option>
+            <option>VISHAL</option>
+            <option>VISHNU PATEL</option>
+
+          </select>
+        </div>
+
+          <!-- Visit Date -->
+
+          <div class="col-md-2">
+            <label for="visitdate" class="form-label">Date of visit :</label>
+            <input type="date" class="form-control" id="visitdate" name="DOV"    required>
+          </div>
+
+
+         <!-- Seprate earthpit Status -->
+
+          <div class="col-md-3">
+          <label for="earthpit" class="form-label">Connect Automation System from Seprate earthpit (Y/N) :</label>
+          <select id="earthpit" class="form-select" name="SEPERATE_EARTH_PIT_STATUS" required>
+            <option value="" disabled  selected>Earthing is ok (Yes/No)</option>
+            <option>YES</option>
+            <option>NO</option>
+          </select>
+        </div>
+
+        <!-- Select Black rubber qty -->
+
+        <div class="col-md-3">
+            <label for="blackrubber" class="form-label">Select Black rubber Qty which installed :</label>
+            <select id="blackrubber" class="form-select" name="BLACK_RUBBER_STATUS" required>
+              <option value="" disabled  selected>Black Rubber use Qty .</option>
+               <option>No</option>
+               <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+       
+          <!-- Tank Loop wire status -->
+          <div class="col-md-3">
+            <label for="wireloop" class="form-label">Tank Wire looping status :</label>
+            <select id="wireloop" class="form-select" name="Tank_Wire_looping_status" required>
+              <option value="" disabled  selected>Tank wire looped (Y/N).</option>
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+
+           <!-- no OF du IN SITE -->
+
+           <div class="col-md-3">
+            <label for="noofDU" class="form-label">NO of DU  :</label>
+            <select id="noofDU" class="form-select" name="NoofDU" required>
+              <option value="" disabled  selected> Select Number of DU in site </option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+            </select>
+          </div>
+
+          <!-- no OF du online -->
+
+          <div class="col-md-3">
+            <label for="noofDUinonline" class="form-label">NO of DU in online mode :</label>
+            <select id="noofDUinonline" class="form-select" name="NoofDUinonline" required>
+              <option value="" disabled  selected> Select Number of DU in ONLINE MODE </option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+            </select>
+          </div>
+
+          <!-- Reason Behind DU offline -->
+
+        <div class="col-md-6">
+          <label for="DUREMARK" class="form-label">Reason Behind DU offline (If any) :</label>
+          <input type="text" class="form-control" id="DUREMARK" name="DUremark" placeholder="@Midco DU control Card issue" required>
+        </div>
+
+      <!-- Ph-11 slave qty-->
+      <div class="col-md-3">
+        <label for="slave" class="form-label">Number of Phase -11 slave install by AGS team :</label>
+        <select id="slave" class="form-select" name="Noofphase11slave" required>
+          <option value="" disabled  selected>Select Ph-11 slave installed by AGS</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+        </select>
+      </div>
+  
+      <!-- ATG Probe status -->
+      <div class="col-md-3">
+        <label for="atgproberequirment" class="form-label">ATG Probe Installed at site :</label>
+        <input type="text" class="form-control" id="atgproberequirment" name="Atgproberequirment" placeholder="@Probe Make->Probe Size->Product" required >
+       
+      </div>
+
+      <!-- ATG fLOAT KIT-->
+      <div class="col-md-3">
+        <label for="slave" class="form-label">Float Kit Installed at site :</label>
+        <select id="slave" class="form-select" name="Floatkit" required>
+          <option value="" disabled  selected>Qty. of float kit installed</option>
+          <option>NO</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+      <!-- Probe make in site -->
+      <div class="col-md-3">
+        <label for="wireloop" class="form-label">Probe Make in site :</label>
+        <select id="wireloop" class="form-select" name="Probemake" required>
+          <option value="" disabled  selected>Select Probe Make</option>
+          <option>SI</option>
+          <option>SBEM</option>
+          <option>ALISONIC</option>
+        </select>
+      </div>
+    
+
+      <h1>Installed Material Details :</h1>
+
+
+      <!-- FCC BATTERY -->
+
+      <div class="col-md-3">
+        <label for="Battery" class="form-label">3.7 V LI Battery :</label>
+        <select id="Battery" class="form-select" name="Fccbattery" required>
+          <option value="" disabled  selected>QTY installed battery</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <!--DEALER KEY REQUIRED-->
+
+      <div class="col-md-3">
+        <label for="dealerkey" class="form-label">Dealer Key provided to dealer (Y/N) :</label>
+        <select id="dealerkey" class="form-select" name="Dealerkey" required>
+          <option value="" disabled  selected>Dealer RFID key handover (Y/N)</option>
+          <option>YES</option>
+          <option>NO</option>
+
+        </select>
+      </div>
+
+       <!-- Lan Wire required -->
+
+       
+      <div class="col-md-3">
+        <label for="lanwire" class="form-label">LAN Wire proivide to site (Per miter) :</label>
+        <select id="lanwire" class="form-select" name="Lanwire" required>
+          <option value="" disabled  selected>HAVE YOU INSTALLED lan wire (per miter)</option>
+          <option>NO</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+
+      <!-- FCC FULL -->
+
+      <div class="col-md-3">
+        <label for="FULLFCC" class="form-label">FCC FULL INSTALLED (Y/N) :</label>
+        <select id="FULLFCC" class="form-select" name="FULLFcc" required>
+          <option value="" disabled  selected>HAVE YOU INSTALLED FCC FULL INSTALLED (Y/N</option>
+          <option>NO</option>
+          <option>YES</option>
+        </select>
+      </div>
+
+
+      <!--BOS CARD-->
+
+      <div class="col-md-3">
+        <label for="BOSCARD" class="form-label">BOS CARD :</label>
+        <select id="BOSCARD" class="form-select" name="BOSCard" required>
+          <option value="" disabled  selected>Select qty installed BOS CARD</option>
+          <option>NO</option>
+          <option>1</option>
+        </select>
+      </div>
+
+      <!-- INTERFACE CARD -->
+      <div class="col-md-3">
+        <label for="IOCARD" class="form-label">INTERFACE CARD :</label>
+        <select id="IOCARD" class="form-select" name="IOcard" required>
+          <option value="" disabled  selected>Select qty installed of IO CARD</option>
+          <option>NO</option>
+          <option>1</option>
+        </select>
+      </div>
+
+      <!-- 5V SMPS - PH-IX, PH-X, PH-XI, PH-XII -->
+      <div class="col-md-3">
+        <label for="SmallSMPS" class="form-label">5V SMPS - PH-IX, PH-X, PH-XI, PH-XII :</label>
+        <select id="SmallSMPS" class="form-select" name="Smallsmps" required>
+          <option value="" disabled  selected>Select qty installed 05V SMPS</option>
+          <option>NO</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+
+      <!--12V SMPS - PH-IX, PH-X, PH-XI, PH-XII  -->
+      <div class="col-md-3">
+        <label for="12VSMPS" class="form-label">12V SMPS - PH-IX, PH-X, PH-XI, PH-XII :</label>
+        <select id="12VSMPS" class="form-select" name="LargeSMPS" required>
+          <option value="" disabled  selected>Select qty installed of 12V SMPS</option>
+          <option>NO</option>
+          <option>1</option>
+        </select>
+      </div>
+
+
+      <!-- RFID LOCK -->
+      <div class="col-md-3">
+        <label for="RFPCB" class="form-label">RFID LOCK :</label>
+        <select id="RFPCB" class="form-select" name="Rflock" required>
+          <option value="" disabled  selected>Select qty installed of RFID Lock </option>
+          <option>NO</option>
+          <option>1</option>
+        </select>
+      </div>
+
+
+      <!-- RF LOCK PCB -->
+      <div class="col-md-3">
+        <label for="RFPCB" class="form-label">RF LOCK PCB :</label>
+        <select id="RFPCB" class="form-select" name="RFpcb" required>
+          <option value="" disabled  selected>Select qty installed of RF Lock PCB</option>
+          <option>NO</option>
+          <option>1</option>
+        </select>
+      </div>
+      
+      <!-- MONITOR -->
+
+      <div class="col-md-3">
+        <label for="moniter" class="form-label">Moniter :</label>
+        <select id="moniter" class="form-select" name="Moniter" required>
+          <option value="" disabled  selected>HAVE YOU INSTALLED Moniter(Y/N)</option>
+          <option>YES</option>
+          <option>NO</option>
+        </select>
+      </div>
+
+
+      <!-- KB/MOUSE -->
+
+
+      <div class="col-md-3">
+        <label for="KBMOUSE" class="form-label">KB/MOUSE :</label>
+        <select id="KBMOUSE" class="form-select" name="KBMouse" required>
+          <option value="" disabled  selected> HAVE YOU INSTALLED KB/MOUSE (Y/N)</option>
+          <option>YES</option>
+          <option>NO</option>
+        </select>
+      </div>
+
+      <!-- BARRIER -->
+
+      <div class="col-md-3">
+        <label for="BARRIER" class="form-label">BARRIER CARD :</label>
+        <select id="BARRIER" class="form-select" name="Barrier" required>
+          <option value="" disabled  selected>HAVE YOU INSTALLED BARRIER CARD(Y/N)</option>
+          <option>YES</option>
+          <option>NO</option>
+        </select>
+      </div>
+
+
+      <!--RF MASTER-->
+
+      <div class="col-md-3">
+        <label for="RFMASTER" class="form-label">RF MASTER :</label>
+        <select id="RFMASTER" class="form-select" name="RFmaster" required>
+          <option value="" disabled  selected>HAVE YOU INSTALLED RF MASTER (Y/N)</option>
+          <option>YES</option>
+          <option>NO</option>
+        </select>
+      </div>
+
+         <!--RF SLAVE-->
+
+         <div class="col-md-3">
+            <label for="RFSLAVE" class="form-label">RF SLAVE - PH-11:</label>
+            <select id="RFSLAVE" class="form-select" name="RFSlave" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED PH-11 RF SLAVE </option>
+              <option>NO</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+
+          <!--ROUTER-->
+
+         <div class="col-md-3">
+            <label for="ROUTER" class="form-label">ROUTER :</label>
+            <select id="ROUTER" class="form-select" name="Router" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED ROUTER </option>
+              <option>Pending</option>
+              <option>NO</option>
+              <option>1</option>
+            </select>
+          </div>
+
+
+            <!--ADEPTER-->
+
+         <div class="col-md-3">
+            <label for="ADEPTER" class="form-label">ADEPTER :</label>
+            <select id="ADEPTER" class="form-select" name="Adepter" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED ADEPTER </option>
+              <option>Pending</option>
+              <option>NO</option>
+              <option>1</option>
+            </select>
+          </div>
+
+          <!-- SPD -->
+          <div class="col-md-3">
+            <label for="SPD" class="form-label">SPD :</label>
+            <select id="SPD" class="form-select" name="Spd" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED SPD . </option>
+              <option>NO</option>
+              <option>1</option>
+            </select>
+          </div>
+
+          <!-- TOP LED CARD -->
+          <div class="col-md-3">
+            <label for="IOLED" class="form-label">TOP LED CARD :</label>
+            <select id="IOLED" class="form-select" name="IOled" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED TOP LED CARD AT SITE (Y/N)</option>
+              <option>NO</option>
+              <option>1</option>
+            </select>
+          </div>
+
+          <!-- SLAVE FOR PRICE SIGNAGE(PYLON) -->
+          <div class="col-md-3">
+            <label for="PYLON" class="form-label">SLAVE FOR PRICE SIGNAGE(PYLON)  :</label>
+            <select id="PYLON" class="form-select" name="Pylon" required>
+              <option value="" disabled  selected>PYLON SLAVE qty installed </option>
+              <option>NO</option>
+              <option>1</option>
+            </select>
+          </div>
+
+
+          <!-- FCC CARD -->
+
+          <div class="col-md-3">
+            <label for="FCCCARD" class="form-label">FCC CARD  :</label>
+            <select id="FCCCARD" class="form-select" name="FCCcard" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED FCC CARD (Y/N) </option>
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+
+         <!-- FCC METAL ENCLOUSER STATUS -->
+
+          <div class="col-md-3">
+            <label for="FCCENCLOUSER" class="form-label">FCC METAL ENCLOUSER INSTALLED (Y/N) :</label>
+            <select id="FCCENCLOUSER" class="form-select" name="FCCenclouser" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED FCC METAL ENCLOUSER AT SITE (Y/N) </option>
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+         <!-- MCB STATUS -->
+          
+          <div class="col-md-3">
+            <label for="MCB" class="form-label">MCB INSTALLED (Y/N)  :</label>
+            <select id="MCB" class="form-select" name="Mcb" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED MCB AT SITE (Y/N) </option>
+              <option>YES</option>
+              <option>NO</option>
+            </select>
+          </div>
+
+
+          <!-- GPRS MODULE AND SIM INSTALLATION -->
+
+
+          <div class="col-md-3">
+            <label for="MCB" class="form-label">GPRS MODULE AND SIM INSTALLED  (Y/N)  :</label>
+            <select id="MCB" class="form-select" name="SIM" required>
+              <option value="" disabled  selected>HAVE YOU INSTALLED GPRS MODULE AND SIM AT SITE </option>
+              <option>NO</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+             
+
+      <!-- Submit details -->
+        <div class="d-grid gap-2 col-6 mx-auto mt-4">
+          <!-- <button type="submit" class="btn btn-outline-success btn-lg">Submit Details</button> -->
+          <button type="submit" id="calc-btn" class="btn-lg">Submit</button>
+    
+
+        <!-- RESET -->
+        
+            <button type="reset" id="calc-btn1">Eraise</button>
+          </div>
+          
+          <div class="text-center pt-4"><p>Copyright © 2023-24 Powered by Nikhil Trivedi <br> Version 16.07 </p></div>
+
+      </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+
+  </body>
+</html>
